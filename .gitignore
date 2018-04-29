@@ -1,0 +1,8 @@
+.idea/
+Include/
+Lib/
+Scripts/
+*.json
+*.cfg
+blog/uploads
+app/db_repository
