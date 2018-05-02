@@ -2,7 +2,9 @@
 Include/
 Lib/
 Scripts/
+__pycache__/
 *.json
 *.cfg
 blog/uploads
 app/db_repository
+*.sqlite3

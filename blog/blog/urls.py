@@ -23,5 +23,7 @@ from blog import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', views.main, ),
+    url('about', views.about, ),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
+    url(r'^post/(?P<pk>\d+)/$', views.post, name='post')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

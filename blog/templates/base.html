@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<title>Главная</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+
+<header>
+	<div class="wrapper">
+		<div class="mainmenu">
+			<p>__заметки__.быдлокодера</p>
+		</div>
+
+		<div class="menu">
+			<div>
+				<a href="/">Посты</a>
+				<a href="/about">О блоге</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section>
+	<div>
+		<div class="maincontent">
+			{% block content %}{% endblock content %}
+			{% block post %}{% endblock post %}
+		</div>
+	</div>
+	
+</section>
+
+<section>
+	<div class="wrapper">
+		<div class="footer">
+			<p>2018</p>
+		</div>
+	</div>
+</section>
+</body>
+</html>

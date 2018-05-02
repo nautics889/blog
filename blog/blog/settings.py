@@ -25,8 +25,8 @@ SECRET_KEY = 'ai&x8d-*xxjqb433#@)-ha5zoi!zvj$nwywbrb7&_+148xoum('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-DISQUS_API_KEY = 'FOOBARFOOBARFOOBARFOOBARFOOBARF'
-DISQUS_WEBSITE_SHORTNAME = 'foobar'
+DISQUS_API_KEY = '6rgXmPsYe6tCrFlI4TgahEakOHw2G9CLhIfsDndz4X8foTIutkc7MQ9j0WoWZ0mo'
+DISQUS_WEBSITE_SHORTNAME = 'nautics900'
 
 ALLOWED_HOSTS = ['127.0.0.1', 'nautics900.pythonanywhere.com']
 
@@ -131,6 +131,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 ROOT = os.path.dirname(BASE_DIR)
 STATIC_ROOT = os.path.join(ROOT, 'static')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 MEDIA_ROOT = BASE_DIR + '/uploads/'
 MEDIA_URL = '/uploads/'

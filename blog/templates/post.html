@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block post %}
+	<h1 class="titlepost">{{ post.title }}</h1>
+	<div style="margin-left: 50px; width: 90%; color: red;">
+		<p>{{ post.content|safe|linebreaksbr }}</p>
+	</div>
+	<div>
+		{% load disqus_tags %}
+		{% set_disqus_url request.build_absolute_uri %}
+		{% set_disqus_identifier id %}
+ 		{% disqus_show_comments disqus_identifier %}
+	</div>
+{% endblock post %}

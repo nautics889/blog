@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>{% block post %}{% endblock post %}</div>
+	{% load disqus_tags %}
+	{% set_disqus_identifier id %}
+	{% set_disqus_url request.build_absolute_uri %}
+ 	{% disqus_show_comments %}
+</body>
+</html>
