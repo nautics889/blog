@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ai&x8d-*xxjqb433#@)-ha5zoi!zvj$nwywbrb7&_+148xoum('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 DISQUS_API_KEY = '6rgXmPsYe6tCrFlI4TgahEakOHw2G9CLhIfsDndz4X8foTIutkc7MQ9j0WoWZ0mo'
 DISQUS_WEBSITE_SHORTNAME = 'nautics900'
